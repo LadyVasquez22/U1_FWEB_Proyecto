@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de Sesión</title>
+</head>
+
+<body style="font-family: Arial; background-color: #eef3f8;">
+
+<header style="background-color: darkblue; color: white; padding: 20px; text-align: center;">
+    <h1>SISTEMA DE TUTORÍAS ACADÉMICAS</h1>
+    <p>Ingreso al sistema de gestión de citas académicas.</p>
+</header>
+
+<main style="width: 400px; margin: 40px auto; background-color: white; padding: 25px; border: 2px solid darkblue; border-radius: 10px;">
+
+    <section>
+        <h2 style="text-align: center; color: darkblue;">Inicio de sesión</h2>
+
+        <form>
+            <label>Usuario o correo electrónico:</label><br>
+            <input type="text" name="usuario" required placeholder="Ingrese su usuario o correo" style="width: 95%; padding: 8px;">
+            <br><br>
+
+            <label>Contraseña:</label><br>
+            <input type="password" name="contrasena" required minlength="8" maxlength="16" placeholder="8 a 16 caracteres" style="width: 95%; padding: 8px;">
+            <br><br>
+
+            <a href="./pages/principal/principal.html">
+                <button type="button" style="background-color: darkblue; color: white; padding: 10px; width: 100%;">
+                    Iniciar sesión
+                </button>
+            </a>
+        </form>
+
+        <p style="text-align: center;">
+            ¿No tienes cuenta?
+            <a href="./pages/registro/registro.html">Registrarse</a>
+        </p>
+    </section>
+
+</main>
+
+<footer style="text-align: center; background-color: darkblue; color: white; padding: 10px;">
+    <p>Desarrollado por Lady Vasquez - Fundamentos de Sistemas Web</p>
+</footer>
+
+</body>
+</html>

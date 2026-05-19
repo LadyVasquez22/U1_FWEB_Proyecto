@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+</head>
+
+<body style="font-family: Arial; background-color: #eef3f8;">
+
+    <header style="background-color: darkblue; color: white; padding: 20px; text-align: center;">
+        <h1>REGISTRO DE USUARIO</h1>
+        <p>Crea una cuenta para acceder al sistema de tutorías académicas.</p>
+    </header>
+
+    <nav style="text-align: center; padding: 15px; background-color: lightblue;">
+        <a href="../../index.html">Volver al inicio de sesión</a>
+    </nav>
+
+    <main
+        style="width: 550px; margin: 30px auto; background-color: white; padding: 25px; border: 2px solid darkblue; border-radius: 10px;">
+
+        <section>
+
+            <h2 style="text-align:center; color:darkblue;">
+                Formulario de registro
+            </h2>
+
+            <form action="../principal/principal.html" method="get">
+
+                <label>Nombres:</label><br>
+
+                <input type="text" name="nombres" required placeholder="Ingrese sus nombres"
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" title="Solo se permiten letras" style="width:95%; padding:8px;">
+
+                <br><br>
+
+                <label>Apellidos:</label><br>
+
+                <input type="text" name="apellidos" required placeholder="Ingrese sus apellidos"
+                    pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" title="Solo se permiten letras" style="width:95%; padding:8px;">
+
+                <br><br>
+
+                <label>Cédula:</label><br>
+
+                <input type="text" name="cedula" required maxlength="10" minlength="10" pattern="[0-9]{10}"
+                    title="La cédula debe contener exactamente 10 números" placeholder="Ingrese su cédula"
+                    style="width:95%; padding:8px;">
+
+                <br><br>
+
+                <label>Fecha de nacimiento:</label><br>
+
+                <input type="date" name="fechaNacimiento" required style="width:95%; padding:8px;">
+
+                <br><br>
+
+                <label>Género:</label><br>
+
+                <select name="genero" required style="width:98%; padding:8px;">
+
+                    <option value=""> Seleccione una opción </option>
+
+                    <option value="masculino"> Masculino </option>
+
+                    <option value="femenino"> Femenino </option>
+
+                </select>
+
+                <br><br>
+
+                <label>Correo electrónico:</label><br>
+
+                <input type="email" name="correo" required placeholder="ejemplo@correo.com"
+                    style="width:95%; padding:8px;">
+
+                <br><br>
+
+                <label>Contraseña:</label><br>
+
+                <input type="password" name="contrasena" required minlength="8" maxlength="16"
+                    placeholder="8 a 16 caracteres" style="width:95%; padding:8px;">
+
+                <br><br>
+
+                <button type="submit" style="background-color:darkblue; color:white; padding:10px; width:100%;">
+
+                    Registrarse
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <aside style="width:550px; margin:auto; background:#fff3cd; padding:15px; border:1px solid orange;">
+
+        <h3>Importante</h3>
+
+        <p>
+            Asegunrese de ingresar correctamente sus datos.
+        </p>
+
+    </aside>
+
+    <footer style="text-align:center; background-color:darkblue; color:white; padding:10px; margin-top:20px;">
+
+        <p>
+            Desarrollado por Lady Vasquez
+        </p>
+
+        <p>
+            Fundamentos de Sistemas Web - ESPE
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
